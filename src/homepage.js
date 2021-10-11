@@ -34,9 +34,7 @@ function header() {
     const instagramA = document.createElement('a')
     const instagramLogo = document.createElement('img');
     // img properties
-    instagramLogo.setAttribute('src', '/images/instagram.svg');
-    instagramLogo.setAttribute('height', '35px');
-    instagramLogo.setAttribute('width', '35px');
+    instagramLogo.setAttribute('src', './images/instagram.svg');
     instagramA.setAttribute('href', '#'); // link
     instagramLi.appendChild(instagramA); 
     instagramA.appendChild(instagramLogo);
@@ -44,9 +42,7 @@ function header() {
     const twitterA = document.createElement('a');
     const twitterLogo = document.createElement('img');
     // img properties
-    twitterLogo.setAttribute('src', '/images/twitter.svg');
-    twitterLogo.setAttribute('height', '35px');
-    twitterLogo.setAttribute('width', '35px');
+    twitterLogo.setAttribute('src', './images/twitter.svg');
     twitterA.setAttribute('href', '#'); // link
     twitterLi.appendChild(twitterA);
     twitterA.appendChild(twitterLogo);
@@ -54,9 +50,7 @@ function header() {
     const facebookA = document.createElement('a');
     const facebookLogo = document.createElement('img');
     // img properties
-    facebookLogo.setAttribute('src', '/images/facebook.svg');
-    facebookLogo.setAttribute('height', '35px');
-    facebookLogo.setAttribute('width', '35px');
+    facebookLogo.setAttribute('src', './images/facebook.svg');
     facebookA.setAttribute('href', '#'); // link
     facebookLi.appendChild(facebookA); 
     facebookA.appendChild(facebookLogo);
@@ -64,9 +58,7 @@ function header() {
     const githubA = document.createElement('a');
     const githubLogo = document.createElement('img');
     // img properties
-    githubLogo.setAttribute('src', '/images/github.svg');
-    githubLogo.setAttribute('height', '35px');
-    githubLogo.setAttribute('width', '35px');
+    githubLogo.setAttribute('src', './images/github.svg');
     githubA.setAttribute('href', '#'); // link
     githubLi.appendChild(githubA); 
     githubA.appendChild(githubLogo);
