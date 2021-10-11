@@ -34,6 +34,10 @@ header {
   justify-content: space-evenly;
   padding: 0px;
   width: 220px;
+  img {
+    height: 30px;
+    width: 30px;
+  }
   li {
     height: 35px;
     img {
@@ -106,6 +110,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 30px;
+  background-color: $darkgrey;
   p {
     width: fit-content;
     font-size: .90rem;
