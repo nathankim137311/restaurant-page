@@ -56,11 +56,12 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  img {
-    margin-top: 55px;
-    width: 1000px;
-    height: auto;
-  }
+}
+
+#banner-img {
+  margin-top: 100px;
+  width: 1000px;
+  height: auto;
 }
 
 #about {
