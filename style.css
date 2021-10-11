@@ -198,6 +198,7 @@ footer a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px;
+  background-color: #202020;
 }
 
 #copyright-info p {
