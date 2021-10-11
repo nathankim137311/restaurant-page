@@ -25,23 +25,26 @@ function footer() {
     }
     // visit list
     const visitUl = document.createElement('ul');
+    visitUl.setAttribute('id', 'visit'); 
     const visitLi1 = document.createElement('li');
     const visitH3 = document.createElement('h3');
+    visitH3.classList.add('footer-headings');
+    visitH3.textContent = 'Visit'; 
+    visitLi1.appendChild(visitH3);
     const visitLi2 = document.createElement('li');
     const visitP = document.createElement('p');
-    visitH3.textContent = 'Visit';
-    visitH3.classList.add('footer-headings');
     visitP.textContent = '1223 fake st SE, fake city, 54321, state, USA'; 
-    visitLi1.appendChild(visitH3); 
     visitLi2.appendChild(visitP);
     visitUl.append(visitLi1, visitLi2);
     // follow list 
     const followUl = document.createElement('ul');
+    followUl.setAttribute('id', 'follow');
     const followLi = document.createElement('li');
     const followH3 = document.createElement('h3');
-    followUl.setAttribute('id', 'follow');
     followH3.classList.add('footer-headings');
     followH3.textContent = 'Follow';
+    followUl.appendChild(followLi);
+    followLi.appendChild(followH3);
     let followLinks = ['Instagram', 'Twitter', 'Yelp']; 
     for(let i = 0; i < followLinks.length; i++) {
         const li = document.createElement('li');
@@ -49,9 +52,8 @@ function footer() {
         a.textContent = followLinks[i];
         a.setAttribute('href', '#');
         li.appendChild(a);
+        followUl.appendChild(li);
     }
-    followUl.appendChild(followLi);
-    followLi.appendChild(followH3);
     // contact list
     const contactUl = document.createElement('ul'); 
     const contactLi1 = document.createElement('li');
@@ -77,7 +79,7 @@ function footer() {
     // appending elements to the DOM
     content.appendChild(footer);
     footer.append(footerDiv, copyDiv);
-    footerDiv.appendChild(exploreUl, visitUl, followUl, contactUl);
+    footerDiv.append(exploreUl, visitUl, followUl, contactUl);
 }
 
 export default footer
