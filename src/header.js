@@ -26,6 +26,20 @@ function header() {
     contact.setAttribute('id', 'contact');
     contact.setAttribute('href', '#'); // link 
     contactLi.appendChild(contact); 
+    // navLinks array 
+    const navLinks = [home, menu, contact];
+    navLinks.forEach(link => link.addEventListener('click', (e) => {
+        if (e.target.id === 'home') {
+            const home = document.getElementById('home');
+            home.style.borderBottom = '4px solid #2ECBE9';
+        } else if (e.target.id === 'menu') {
+            const menu = document.getElementById('menu');
+            menu.style.borderBottom = '4px solid #2ECBE9';
+        } else if (e.target.id === 'contact') {
+            const contact = document.getElementById('contact');
+            contact.style.borderBottom = '4px solid #2ECBE9';
+        }
+    }));
     // unordered list social-links
     const social = document.createElement('ul');
     social.setAttribute('id', 'social-links');

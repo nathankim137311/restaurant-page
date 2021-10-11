@@ -64,7 +64,7 @@ function footer() {
     contactUl.setAttribute('id', 'contact');
     contactH3.classList.add('footer-headings');
     contactH3.textContent = 'Contact / hours'; 
-    contactLi2.textContent = 'Phone:'; 
+    contactLi2.textContent = 'Phone: '; 
     contactA.textContent = '435-207-8679';
     contactLi3.textContent = 'Dine-in/take-out/delivery 2-6 AM friday-saturday'
     contactLi2.appendChild(contactA); 
