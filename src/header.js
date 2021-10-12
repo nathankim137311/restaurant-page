@@ -1,3 +1,9 @@
+import Instagram from './instagram.svg';
+import Twitter from './twitter.svg'; 
+import Facebook from './facebook.svg';
+import Github from './github.svg'; 
+
+
 // header element
 function header() {
     const content = document.getElementById('content');
@@ -46,33 +52,33 @@ function header() {
     // a tags with ids 
     const instagramLi = document.createElement('li');
     const instagramA = document.createElement('a')
-    const instagramLogo = document.createElement('img');
+    const instagramLogo = new Image();
+    instagramLogo.src = Instagram;
     // img properties
-    instagramLogo.setAttribute('src', './images/instagram.svg');
     instagramA.setAttribute('href', '#'); // link
     instagramLi.appendChild(instagramA); 
     instagramA.appendChild(instagramLogo);
     const twitterLi = document.createElement('li');
     const twitterA = document.createElement('a');
-    const twitterLogo = document.createElement('img');
+    const twitterLogo = new Image();
+    twitterLogo.src = Twitter;
     // img properties
-    twitterLogo.setAttribute('src', './images/twitter.svg');
     twitterA.setAttribute('href', '#'); // link
     twitterLi.appendChild(twitterA);
     twitterA.appendChild(twitterLogo);
     const facebookLi = document.createElement('li');
     const facebookA = document.createElement('a');
-    const facebookLogo = document.createElement('img');
+    const facebookLogo = new Image();
+    facebookLogo.src = Facebook;
     // img properties
-    facebookLogo.setAttribute('src', './images/facebook.svg');
     facebookA.setAttribute('href', '#'); // link
     facebookLi.appendChild(facebookA); 
     facebookA.appendChild(facebookLogo);
     const githubLi = document.createElement('li');
     const githubA = document.createElement('a');
-    const githubLogo = document.createElement('img');
+    const githubLogo = new Image();
+    githubLogo.src = Github; 
     // img properties
-    githubLogo.setAttribute('src', './images/github.svg');
     githubA.setAttribute('href', '#'); // link
     githubLi.appendChild(githubA); 
     githubA.appendChild(githubLogo);
