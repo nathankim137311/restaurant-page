@@ -1,9 +1,14 @@
 // main content
 // <img id="banner-img" src="/images/bokeh.jpg" alt=""></img>
+import Food from '/src/jpg/street-food.jpg';
 
 function main() {
     const content = document.getElementById('content');
     const main = document.createElement('main'); 
+    // main container 
+    const mainContainer = document.createElement('div');
+    mainContainer.setAttribute('id', 'main-container'); 
+    // info card 
     const infoCard = document.createElement('div');
     infoCard.classList.add('info-card'); 
     // about section
@@ -37,10 +42,13 @@ function main() {
     const locationP = document.createElement('p');
     locationP.textContent = '1223 fake st SE, fake city, 54321, state, USA';
     location.append(locationH2, locationP);
-
+    // picture
+    const foodPicture = new Image(); 
+    foodPicture.src = Food; 
 
     content.appendChild(main);
-    main.appendChild(infoCard); 
+    main.appendChild(mainContainer);
+    mainContainer.append(infoCard, foodPicture); 
     infoCard.append(about, hours, location);
 }
 

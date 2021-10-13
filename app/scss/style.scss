@@ -77,19 +77,32 @@ main {
   opacity: 75%;
 }
 
-// info-cards 
+// main container 
+#main-container {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  height: 700px; 
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid white;
+  img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+} 
 
 .info-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $darkgrey;
+  background-color: black;
   color: $eggshell;
-  width: 30%;
-  height: 700px;
+  width: auto;
+  height: 100%;
   padding: 20px;
-  border-radius: 10px;
-  border: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .card-div {
@@ -98,16 +111,15 @@ main {
   flex-direction: column;
   width: 75%;
   p {
-    text-align: justify;
+    text-align: center;
     line-height: 2rem;
     font-size: 1rem;
   }
 }
 
 .card-headings {
-  margin-top: 50px;
   text-align: center;
-  color: $eggshell;
+  color: $hotpink;
 }
 
 #about {
