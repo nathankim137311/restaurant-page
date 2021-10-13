@@ -1,15 +1,13 @@
-// main content
-// <img id="banner-img" src="/images/bokeh.jpg" alt=""></img>
 import Food from '/src/jpg/street-food.jpg';
+import Squid from '/src/png/red-octopus.png'; 
 
+// main content
 function main() {
     const content = document.getElementById('content');
     const main = document.createElement('main'); 
     // background image
     const backgroundImage = document.createElement('div');
     backgroundImage.setAttribute('id', 'background-image');
-
-
     // main container 
     const mainContainer = document.createElement('div');
     mainContainer.setAttribute('id', 'main-container'); 
@@ -50,9 +48,13 @@ function main() {
     // picture
     const foodPicture = new Image(); 
     foodPicture.src = Food; 
+    // squid logo 
+    const squidLogo = new Image();
+    squidLogo.src = Squid; 
+    squidLogo.setAttribute('id', 'squid-logo');
     // appending elements 
     content.appendChild(main);
-    main.append(backgroundImage, mainContainer);
+    main.append(backgroundImage, mainContainer, squidLogo);
     mainContainer.append(infoCard, foodPicture); 
     infoCard.append(about, hours, location);
 }
