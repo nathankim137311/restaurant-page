@@ -153,9 +153,10 @@ main {
 }
 
 #banner-img {
-  margin-top: 100px;
-  width: 1000px;
+  margin-top: 55px;
+  width: 100%;
   height: auto;
+  opacity: 50%;
 }
 
 #about {
@@ -167,7 +168,7 @@ main {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   width: 100%;
   height: -webkit-fit-content;
