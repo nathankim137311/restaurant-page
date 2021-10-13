@@ -37,6 +37,7 @@ p {
 }
 
 header {
+  z-index: 100;
   top: 0px;
   width: 100%;
   height: 55px;
@@ -139,24 +140,53 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-}
-
-#banner-img {
+  background-image: url("/src/jpg/bokeh.jpg");
+  background-attachment: fixed;
   margin-top: 55px;
   width: 100%;
-  height: auto;
-  opacity: 50%;
+  height: 950px;
+  opacity: 75%;
+}
+
+.info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #202020;
+  color: #F2F2F2;
+  width: 45%;
+  height: 700px;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.card-div {
+  width: 50%;
+}
+
+.card-div p {
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.card-headings {
+  margin-top: 50px;
+  text-align: center;
+  color: #F2F2F2;
 }
 
 #about {
