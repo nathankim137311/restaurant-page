@@ -167,14 +167,25 @@ main {
           align-items: center;
   background-color: #202020;
   color: #F2F2F2;
-  width: 45%;
+  width: 30%;
   height: 700px;
   padding: 20px;
-  border-radius: 7px;
+  border-radius: 10px;
+  border: 2px solid black;
 }
 
 .card-div {
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 75%;
 }
 
 .card-div p {
