@@ -1,7 +1,7 @@
-import Instagram from './instagram.svg';
-import Twitter from './twitter.svg'; 
-import Facebook from './facebook.svg';
-import Github from './github.svg'; 
+import Instagram from '/src/svg/instagram.svg';
+import Twitter from '/src/svg/twitter.svg'; 
+import Facebook from '/src/svg/facebook.svg';
+import Github from '/src/svg/github.svg'; 
 
 // header element
 function header() {
