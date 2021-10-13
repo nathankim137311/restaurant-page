@@ -3,7 +3,6 @@ import Twitter from './twitter.svg';
 import Facebook from './facebook.svg';
 import Github from './github.svg'; 
 
-
 // header element
 function header() {
     const content = document.getElementById('content');
