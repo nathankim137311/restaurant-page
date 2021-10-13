@@ -64,7 +64,6 @@ header {
 }
 
 // main content
-
 main {
   display: flex;
   justify-content: center;
@@ -136,11 +135,10 @@ main {
 
 .card-headings {
   text-align: center;
-  color: $lightgreen;
+  color: $lightblue;
 }
 
 // footer
-
 footer {
   position: relative;
   bottom: 0px;
@@ -167,6 +165,22 @@ footer {
   width: 100%;
   padding: 30px;
   background-color: $hotpink;
+}
+
+#explore {
+  display: flex;
+  flex-direction: column;
+  li a:hover {
+    text-decoration: underline;
+  }
+}
+
+#follow {
+  display: flex;
+  flex-direction: column;
+  li a:hover {
+    text-decoration: underline;
+  }
 }
 
 .footer-headings {
