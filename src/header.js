@@ -2,6 +2,7 @@ import Instagram from '/src/svg/instagram.svg';
 import Twitter from '/src/svg/twitter.svg'; 
 import Facebook from '/src/svg/facebook.svg';
 import Github from '/src/svg/github.svg'; 
+import menuPage from './menu-page';
 
 // header element
 function header() {
@@ -48,6 +49,7 @@ function header() {
             menu.style.borderBottom = '4px solid #2ECBE9';
             mainContainer.remove(); 
             backgroundImg.remove();
+            menuPage(); 
         } else if (e.target.id === 'contact') {
             const contact = document.getElementById('contact');
             const mainContainer = document.getElementById('main-container');  
