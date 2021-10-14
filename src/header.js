@@ -17,46 +17,37 @@ function header() {
     const homeLi = document.createElement('li');
     const home = document.createElement('a'); 
     home.textContent = 'Home';
-    home.setAttribute('id', 'home');
+    home.setAttribute('id', 'nav-home');
     home.setAttribute('href', '#'); // link
     homeLi.appendChild(home); 
     const menuLi = document.createElement('li');
     const menu = document.createElement('a');
     menu.textContent = 'Menu';
-    menu.setAttribute('id', 'menu');
+    menu.setAttribute('id', 'nav-menu');
     menu.setAttribute('href', '#'); // link
     menuLi.appendChild(menu); 
     const contactLi = document.createElement('li');
     const contact = document.createElement('a');
     contact.textContent = 'Contact';
-    contact.setAttribute('id', 'contact');
+    contact.setAttribute('id', 'nav-contact');
     contact.setAttribute('href', '#'); // link 
     contactLi.appendChild(contact); 
     // navLinks array 
     const navLinks = [home, menu, contact];
     navLinks.forEach(link => link.addEventListener('click', (e) => { // adds event listeners to a tags
-        if (e.target.id === 'home') { // deletes child nodes of tag main and adds new content 
-            const home = document.getElementById('home');
-            const mainContainer = document.getElementById('main-container');  
-            const backgroundImg = document.getElementById('background-img');
+        if (e.target.id === 'nav-home') { // deletes child nodes of tag main and adds new content 
+            const home = document.getElementById('nav-home');
             home.style.borderBottom = '4px solid #2ECBE9';
-            mainContainer.remove(); 
-            backgroundImg.remove();
-        } else if (e.target.id === 'menu') { 
-            const menu = document.getElementById('menu');
-            const mainContainer = document.getElementById('main-container');  
-            const backgroundImg = document.getElementById('background-img');
+            removeContent();
+        } else if (e.target.id === 'nav-menu') { 
+            const menu = document.getElementById('nav-menu');
             menu.style.borderBottom = '4px solid #2ECBE9';
-            mainContainer.remove(); 
-            backgroundImg.remove();
+            removeContent();
             menuPage(); 
-        } else if (e.target.id === 'contact') {
-            const contact = document.getElementById('contact');
-            const mainContainer = document.getElementById('main-container');  
-            const backgroundImg = document.getElementById('background-img');
+        } else if (e.target.id === 'nav-contact') {
+            const contact = document.getElementById('nav-contact');
             contact.style.borderBottom = '4px solid #2ECBE9';
-            mainContainer.remove(); 
-            backgroundImg.remove();
+            removeContent();
         }
     }));
     // unordered list social-links
@@ -100,6 +91,11 @@ function header() {
     header.append(h1, nav, social);
     nav.append(homeLi, menuLi, contactLi); 
     social.append(instagramLi, twitterLi, facebookLi, githubLi);
+}
+
+function removeContent() {
+    const main = document.querySelector('main');
+    main.remove();
 }
 
 export default header

@@ -6,6 +6,7 @@ import Bokeh from '/src/jpg/bokeh.jpg';
 function homePage() {
     const content = document.getElementById('content');
     const main = document.createElement('main'); 
+    main.classList.add('home');
     // background image
     const backgroundImg = new Image(); 
     backgroundImg.src = Bokeh; 
