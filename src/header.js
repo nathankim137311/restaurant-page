@@ -33,16 +33,28 @@ function header() {
     contactLi.appendChild(contact); 
     // navLinks array 
     const navLinks = [home, menu, contact];
-    navLinks.forEach(link => link.addEventListener('click', (e) => {
-        if (e.target.id === 'home') {
+    navLinks.forEach(link => link.addEventListener('click', (e) => { // adds event listeners to a tags
+        if (e.target.id === 'home') { // deletes child nodes of tag main and adds new content 
             const home = document.getElementById('home');
+            const mainContainer = document.getElementById('main-container');  
+            const backgroundImg = document.getElementById('background-img');
             home.style.borderBottom = '4px solid #2ECBE9';
-        } else if (e.target.id === 'menu') {
+            mainContainer.remove(); 
+            backgroundImg.remove();
+        } else if (e.target.id === 'menu') { 
             const menu = document.getElementById('menu');
+            const mainContainer = document.getElementById('main-container');  
+            const backgroundImg = document.getElementById('background-img');
             menu.style.borderBottom = '4px solid #2ECBE9';
+            mainContainer.remove(); 
+            backgroundImg.remove();
         } else if (e.target.id === 'contact') {
             const contact = document.getElementById('contact');
+            const mainContainer = document.getElementById('main-container');  
+            const backgroundImg = document.getElementById('background-img');
             contact.style.borderBottom = '4px solid #2ECBE9';
+            mainContainer.remove(); 
+            backgroundImg.remove();
         }
     }));
     // unordered list social-links

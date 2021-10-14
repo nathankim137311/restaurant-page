@@ -1,13 +1,15 @@
 import Food from '/src/jpg/street-food.jpg';
 import Squid from '/src/png/red-octopus.png'; 
+import Bokeh from '/src/jpg/bokeh.jpg';
 
 // main content
-function main() {
+function homePage() {
     const content = document.getElementById('content');
     const main = document.createElement('main'); 
     // background image
-    const backgroundImage = document.createElement('div');
-    backgroundImage.setAttribute('id', 'background-image');
+    const backgroundImg = new Image(); 
+    backgroundImg.src = Bokeh; 
+    backgroundImg.setAttribute('id', 'background-img');
     // main container 
     const mainContainer = document.createElement('div');
     mainContainer.setAttribute('id', 'main-container'); 
@@ -54,9 +56,9 @@ function main() {
     squidLogo.setAttribute('id', 'squid-logo');
     // appending elements 
     content.appendChild(main);
-    main.append(backgroundImage, mainContainer, squidLogo);
+    main.append(backgroundImg, mainContainer, squidLogo);
     mainContainer.append(infoCard, foodPicture); 
     infoCard.append(about, hours, location);
 }
 
-export default main 
+export default homePage 
