@@ -1,3 +1,4 @@
+import Bbq from '/src/jpg/bbq.jpg'
 // menu 
 function menuPage() {
     const content = document.getElementById('content');
@@ -5,6 +6,9 @@ function menuPage() {
     main.setAttribute('id', 'main-menu'); 
     const menu = document.createElement('div');
     menu.setAttribute('id', 'menu-container'); 
+    // heading 
+    const menuH3 = document.createElement('h2'); 
+    menuH3.textContent = 'Menu'; 
     // street food 
     const streetFood = document.createElement('div');
     streetFood.classList.add('menu-divs'); 
@@ -12,8 +16,13 @@ function menuPage() {
     const streetFoodH3 = document.createElement('h3');
     streetFoodH3.textContent = 'Street Food';
     const streetFoodUl = document.createElement('ul');
-    const streetFoodItems = ['Tteokbokki', 'Odeng', 'Corn dog', 'Pajeon', 'Yangnyeom tongdak', 'Japchae', 'Gimbap'];
-    const streetFoodPrice = ['$5.99', '$4.99', '$4.99', '$6.99', '$9.99', '$6.99', '$4.99'];
+
+    const streetFoodImage = new Image();
+    streetFoodImage.src = Bbq; 
+    streetFoodImage.classList.add('food-img');
+
+    const streetFoodItems = ['Tteokbokki', 'Odeng', 'Corn dog', 'Pajeon', 'Yangnyeom tongdak', 'Gimbap'];
+    const streetFoodPrice = ['$5.99', '$4.99', '$4.99', '$6.99', '$9.99', '$4.99'];
     streetFoodUl.appendChild(streetFoodH3); 
     for(let i = 0; i < streetFoodItems.length; i++) {
         const li = document.createElement('li'); 
@@ -22,7 +31,7 @@ function menuPage() {
         li.appendChild(p); 
         streetFoodUl.appendChild(li); 
     }
-    streetFood.appendChild(streetFoodUl); 
+    streetFood.append(streetFoodUl, streetFoodImage); 
     // drinks
     const cocktails = document.createElement('div');
     cocktails.classList.add('menu-divs'); 
@@ -58,11 +67,11 @@ function menuPage() {
         li.appendChild(p); 
         dessertsUl.appendChild(li); 
     }
-    desserts.append(dessertsUl);
+    desserts.appendChild(dessertsUl);
     // appending elements to DOM
     content.appendChild(main); 
     main.appendChild(menu);
-    menu.append(streetFood, cocktails, desserts); 
+    menu.append(menuH3, streetFood, cocktails, desserts); 
     /*
     const main = document.getElementsByTagName('main'); 
     const menu = document.createElement('div');

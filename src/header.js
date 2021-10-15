@@ -17,35 +17,35 @@ function header() {
     const homeLi = document.createElement('li');
     const home = document.createElement('a'); 
     home.textContent = 'Home';
-    home.setAttribute('id', 'nav-home');
+    home.setAttribute('id', 'home-link');
     home.setAttribute('href', '#'); // link
     homeLi.appendChild(home); 
     const menuLi = document.createElement('li');
     const menu = document.createElement('a');
     menu.textContent = 'Menu';
-    menu.setAttribute('id', 'nav-menu');
+    menu.setAttribute('id', 'menu-link');
     menu.setAttribute('href', '#'); // link
     menuLi.appendChild(menu); 
     const contactLi = document.createElement('li');
     const contact = document.createElement('a');
     contact.textContent = 'Contact';
-    contact.setAttribute('id', 'nav-contact');
+    contact.setAttribute('id', 'contact-link');
     contact.setAttribute('href', '#'); // link 
     contactLi.appendChild(contact); 
     // navLinks array 
     const navLinks = [home, menu, contact];
     navLinks.forEach(link => link.addEventListener('click', (e) => {
-        if (e.target.id === 'nav-home') { // deletes child nodes of tag main and adds new content 
-            const home = document.getElementById('nav-home');
+        if (e.target.id === 'home-link') { // deletes child nodes of tag main and adds new content 
+            const home = document.getElementById('home-link');
             home.style.borderBottom = '4px solid #2ECBE9';
             removeContent();
-        } else if (e.target.id === 'nav-menu') { 
-            const menu = document.getElementById('nav-menu');
+        } else if (e.target.id === 'menu-link') { 
+            const menu = document.getElementById('menu-link');
             menu.style.borderBottom = '4px solid #2ECBE9';
             removeContent();
             menuPage(); 
-        } else if (e.target.id === 'nav-contact') {
-            const contact = document.getElementById('nav-contact');
+        } else if (e.target.id === 'contact-link') {
+            const contact = document.getElementById('contact-link');
             contact.style.borderBottom = '4px solid #2ECBE9';
             removeContent();
         }

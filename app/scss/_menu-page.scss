@@ -1,19 +1,40 @@
+@import "globals"; 
+@import "variables"; 
+
 // menu
 #main-menu {
  display: flex;
  justify-content: center;
  align-items: center;
+ flex-direction: column-reverse;
  height: fit-content;
+ h2 {
+    margin: 10px;
+    padding: 3px;
+    width: 200px;
+    text-align: center;
+    background-color: #F5EADA;
+    color: $lightblue;
+    border-radius: 5px;
+    border: 3px #DDA471 solid;
+    font-size: 1.7rem;
+    //border-top-left-radius: 5px;
+    //border-top-right-radius: 5px;
+ }
 }
 
 #menu-container {
     margin-top: 55px;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/src/jpg/korean-frame.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 75%;
     height: fit-content;
-    background-color: $eggshell;
     p {
         line-height: 2rem;
     }
@@ -22,12 +43,27 @@
 .menu-divs {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px;
-    margin: 10px;
-    width: 20%;
-    height: 500px;
-    h3 {
-        text-align: center;
+    width: 50%;
+    height: 380px;
+    border: 1px red solid;
+    border-radius: 5px;
+    background-color: transparent;
+    ul {
+        height: 100%;
+        padding: 0px;
     }
+    h3 {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+        color: $lightblue;
+    }
+}
+
+.food-img {
+    height: 100%;
+    width: 500px;
 }
