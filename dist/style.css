@@ -133,19 +133,63 @@ p {
   color: #71B8E1;
 }
 
-#menu-container {
-  margin-top: 55px;
+#main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: red;
+}
+
+#menu-container {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #F2F2F2;
+}
+
+#menu-container p {
+  line-height: 2rem;
+}
+
+.menu-divs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin: 10px;
+  width: 20%;
+  height: 500px;
+}
+
+.menu-divs h3 {
+  text-align: center;
 }
 
 html {

@@ -34,7 +34,7 @@ function header() {
     contactLi.appendChild(contact); 
     // navLinks array 
     const navLinks = [home, menu, contact];
-    navLinks.forEach(link => link.addEventListener('click', (e) => { // adds event listeners to a tags
+    navLinks.forEach(link => link.addEventListener('click', (e) => {
         if (e.target.id === 'nav-home') { // deletes child nodes of tag main and adds new content 
             const home = document.getElementById('nav-home');
             home.style.borderBottom = '4px solid #2ECBE9';
