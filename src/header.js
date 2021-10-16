@@ -3,6 +3,8 @@ import Twitter from '/src/svg/twitter.svg';
 import Facebook from '/src/svg/facebook.svg';
 import Github from '/src/svg/github.svg'; 
 import menuPage from './menu-page';
+import homePage from './home-page';
+import footer from './footer.js'
 
 // header element
 function header() {
@@ -39,15 +41,20 @@ function header() {
             const home = document.getElementById('home-link');
             home.style.borderBottom = '4px solid #2ECBE9';
             removeContent();
+            homePage();
+            footer(); 
         } else if (e.target.id === 'menu-link') { 
             const menu = document.getElementById('menu-link');
             menu.style.borderBottom = '4px solid #2ECBE9';
             removeContent();
-            menuPage(); 
+            menuPage();
+            footer(); 
         } else if (e.target.id === 'contact-link') {
             const contact = document.getElementById('contact-link');
             contact.style.borderBottom = '4px solid #2ECBE9';
             removeContent();
+            // contact-page 
+            footer(); 
         }
     }));
     // unordered list social-links
@@ -95,7 +102,9 @@ function header() {
 
 function removeContent() {
     const main = document.querySelector('main');
+    const footer = document.querySelector('footer');
     main.remove();
+    footer.remove(); 
 }
 
 export default header

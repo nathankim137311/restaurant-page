@@ -1,4 +1,7 @@
 import Bbq from '/src/jpg/bbq.jpg'
+import Soju from '/src/jpg/soju.jpg'
+import Jeon from '/src/jpg/jeon.jpg'
+import Street from '/src/jpg/street.jpg'
 // menu 
 function menuPage() {
     const content = document.getElementById('content');
@@ -6,6 +9,10 @@ function menuPage() {
     main.setAttribute('id', 'main-menu'); 
     const menu = document.createElement('div');
     menu.setAttribute('id', 'menu-container'); 
+    // background image
+    const backgroundImg = new Image(); 
+    backgroundImg.src = Street; 
+    backgroundImg.setAttribute('id', 'background-img');
     // heading 
     const menuH3 = document.createElement('h2'); 
     menuH3.textContent = 'Menu'; 
@@ -16,11 +23,9 @@ function menuPage() {
     const streetFoodH3 = document.createElement('h3');
     streetFoodH3.textContent = 'Street Food';
     const streetFoodUl = document.createElement('ul');
-
     const streetFoodImage = new Image();
     streetFoodImage.src = Bbq; 
     streetFoodImage.classList.add('food-img');
-
     const streetFoodItems = ['Tteokbokki', 'Odeng', 'Corn dog', 'Pajeon', 'Yangnyeom tongdak', 'Gimbap'];
     const streetFoodPrice = ['$5.99', '$4.99', '$4.99', '$6.99', '$9.99', '$4.99'];
     streetFoodUl.appendChild(streetFoodH3); 
@@ -39,6 +44,9 @@ function menuPage() {
     const cocktailsH3 = document.createElement('h3');
     cocktailsH3.textContent = 'Cocktails'; 
     const cocktailsUl = document.createElement('ul');
+    const cocktailsImage = new Image();
+    cocktailsImage.src = Soju;
+    cocktailsImage.classList.add('food-img');
     const cocktailsItems = ['The Seoul Mule', 'Korean Yogurt Soju', 'Soju Caipirinha', 'Hongchobulmak', 'Makgeolli', 'Subak Soju']; 
     const cocktailsPrice = ['$12.99', '$10.99', '$11.99', '$10.99', '$10.99', '$14.99']
     cocktailsUl.appendChild(cocktailsH3); 
@@ -49,7 +57,7 @@ function menuPage() {
         li.appendChild(p); 
         cocktailsUl.appendChild(li); 
     }
-    cocktails.appendChild(cocktailsUl); 
+    cocktails.append(cocktailsUl, cocktailsImage); 
     // desserts 
     const desserts = document.createElement('div');
     desserts.classList.add('menu-divs'); 
@@ -57,6 +65,9 @@ function menuPage() {
     const dessertsH3 = document.createElement('h3');
     dessertsH3.textContent = 'Deserts'; 
     const dessertsUl = document.createElement('ul');
+    const dessertImage = new Image(); 
+    dessertImage.src = Jeon; 
+    dessertImage.classList.add('food-img'); 
     const dessertItems = ['Patbingsu', 'Bungeoppang', 'Hotteok', 'Songpyeon', 'Dalgona', 'Kkwabaegi']; 
     const dessertPrice = ['$9.99', '$7.99', '$4.99', '$4.99', '$2.99', '$4.99']; 
     dessertsUl.appendChild(dessertsH3);
@@ -67,10 +78,10 @@ function menuPage() {
         li.appendChild(p); 
         dessertsUl.appendChild(li); 
     }
-    desserts.appendChild(dessertsUl);
+    desserts.append(dessertsUl, dessertImage);
     // appending elements to DOM
     content.appendChild(main); 
-    main.appendChild(menu);
+    main.append(backgroundImg, menu);
     menu.append(menuH3, streetFood, cocktails, desserts); 
     /*
     const main = document.getElementsByTagName('main'); 

@@ -10,7 +10,7 @@ footer();
 /*
 // homepage 
 window.onload = header();
-                homePage();
-                footer();
+homePage();
+footer();
 */
 

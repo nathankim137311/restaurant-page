@@ -10,7 +10,7 @@ function homePage() {
     // background image
     const backgroundImg = new Image(); 
     backgroundImg.src = Bokeh; 
-    backgroundImg.setAttribute('id', 'background-img');
+    backgroundImg.setAttribute('id', 'home-background-img');
     // main container 
     const mainContainer = document.createElement('div');
     mainContainer.setAttribute('id', 'main-container'); 
