@@ -10,6 +10,7 @@ footer {
     flex-direction: column;
     background-color: $darkgrey;
     color: $eggshell;
+    z-index: 3;
     ul {
       line-height: 1.8rem;
       font-size: .90rem;

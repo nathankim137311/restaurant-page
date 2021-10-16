@@ -106,7 +106,6 @@ function removeContent() {
     main.remove();
     footer.remove(); 
 }
-
 function  initMap() {   
     // location of dmz
     const dmz = { lat: 37.916461145505295, lng: 126.69780649205406 };

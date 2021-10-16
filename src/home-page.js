@@ -1,6 +1,6 @@
 import Food from '/src/jpg/street-food.jpg';
 import Squid from '/src/png/red-octopus.png'; 
-import Bokeh from '/src/jpg/bokeh.jpg';
+import Street from '/src/jpg/street.jpg';
 // main content
 function homePage() {
     const content = document.getElementById('content');
@@ -8,7 +8,7 @@ function homePage() {
     main.classList.add('home');
     // background image
     const backgroundImg = new Image(); 
-    backgroundImg.src = Bokeh; 
+    backgroundImg.src = Street; 
     backgroundImg.setAttribute('id', 'home-background-img');
     // main container 
     const mainContainer = document.createElement('div');
@@ -18,12 +18,13 @@ function homePage() {
     infoCard.classList.add('info-card'); 
     // about section
     const about = document.createElement('div'); 
+    about.setAttribute('id', 'about'); 
     about.classList.add('card-div');
     const aboutH2 = document.createElement('h2');
     aboutH2.classList.add('card-headings'); 
     aboutH2.textContent = 'About'; 
     const aboutP = document.createElement('p');
-    aboutP.textContent = 'Korean Street makes the best korean street food in k-town, with a variety of options like tteok-bokki, gimbap, bibimbap, corn dogs, and delicious seafood pajeon, all delivered with a smile and fast service.'
+    aboutP.textContent = 'Korean Street makes the best korean street food in k-town, with a variety of options like tteok-bokki, gimbap, bibimbap, corn dogs, and delicious seafood pajeon.'
     about.append(aboutH2, aboutP);
     // hours section
     const hours = document.createElement('div');
@@ -38,15 +39,6 @@ function homePage() {
     const hoursP3 = document.createElement('p');
     hoursP3.textContent = 'Sunday: closed'; 
     hours.append(hoursH2, hoursP, hoursP2, hoursP3); 
-    // locations sections 
-    const location = document.createElement('div');
-    location.classList.add('card-div');
-    const locationH2 = document.createElement('h2');
-    locationH2.classList.add('card-headings');
-    locationH2.textContent = 'Find Us';
-    const locationP = document.createElement('p');
-    locationP.textContent = '1223 fake st SE, fake city, 54321, state, USA';
-    location.append(locationH2, locationP);
     // picture
     const foodPicture = new Image(); 
     foodPicture.src = Food; 
@@ -58,7 +50,7 @@ function homePage() {
     content.appendChild(main);
     main.append(backgroundImg, mainContainer, squidLogo);
     mainContainer.append(infoCard, foodPicture); 
-    infoCard.append(about, hours, location);
+    infoCard.append(about, hours);
 }
 
 export default homePage 
