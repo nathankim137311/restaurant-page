@@ -1,0 +1,88 @@
+@import "globals"; 
+@import "variables"; 
+// contact 
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
+
+#contact-background-img {
+    opacity: 0.4;
+    height: 915px;
+    width: 100%;
+}
+
+#google-img {
+    height: 350px;
+    width: 450px;
+    border-radius: 5px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 73px 0px 73px 0px;
+    height: 500px;
+    width: 700px;
+    width: 45%;
+    border: 3px solid #DDA471;
+    background-image: url('/src/jpg/korean-frame.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 8px 20px 1px rgba(0,0,0,0.5);
+    h2 {
+        margin: 0px 0px 10px 0px;
+        font-size: 1.7rem;
+        color: $hotpink;
+    }
+    p {
+        color: $darkgrey;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    ul {
+        padding: 0px 10px 0px 10px; 
+        height: fit-content;
+        width: 250px;
+    }
+    li a {
+        color: $darkgrey;
+        line-height: 2rem;
+    }
+}
+
+.list-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+}
+
+#google-img {
+    margin-right: 10px;
+    border: 2px #DDA471 solid;
+}
+
+#contact-social {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.contact-logo {
+    filter: invert(64%) sepia(79%) saturate(300%) hue-rotate(114deg) brightness(90%) contrast(93%);
+    height: 30px;
+    width: 30px;
+}

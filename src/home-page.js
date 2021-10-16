@@ -1,7 +1,6 @@
 import Food from '/src/jpg/street-food.jpg';
 import Squid from '/src/png/red-octopus.png'; 
 import Bokeh from '/src/jpg/bokeh.jpg';
-
 // main content
 function homePage() {
     const content = document.getElementById('content');

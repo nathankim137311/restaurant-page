@@ -2,10 +2,10 @@ import Instagram from '/src/svg/instagram.svg';
 import Twitter from '/src/svg/twitter.svg'; 
 import Facebook from '/src/svg/facebook.svg';
 import Github from '/src/svg/github.svg'; 
-import menuPage from './menu-page';
 import homePage from './home-page';
+import menuPage from './menu-page';
+import contactPage from './contact-page';
 import footer from './footer.js'
-
 // header element
 function header() {
     const content = document.getElementById('content');
@@ -53,7 +53,7 @@ function header() {
             const contact = document.getElementById('contact-link');
             contact.style.borderBottom = '4px solid #2ECBE9';
             removeContent();
-            // contact-page 
+            contactPage(); 
             footer(); 
         }
     }));
@@ -99,7 +99,6 @@ function header() {
     nav.append(homeLi, menuLi, contactLi); 
     social.append(instagramLi, twitterLi, facebookLi, githubLi);
 }
-
 function removeContent() {
     const main = document.querySelector('main');
     const footer = document.querySelector('footer');
