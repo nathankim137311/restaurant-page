@@ -7,7 +7,6 @@ import contactPage from './contact-page.js';
 header();
 contactPage();
 footer(); 
-
 /*
 header();
 menuPage();

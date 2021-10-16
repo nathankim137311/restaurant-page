@@ -13,6 +13,25 @@
 <body>
     <div id="content">
     </div>
-    <script src="main.js"></script>
+    <script src="main.js">
+    </script>
+        <script>
+            function  initMap() {   
+                // location of dmz
+                const dmz = { lat: 37.916461145505295, lng: 126.69780649205406 };
+                // the map, centered at dmz
+                const map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 6, 
+                    center: dmz,
+                });
+                // the marker, positioned at dmz
+                const marker = new google.maps.Marker({
+                    position: dmz,
+                    map: map, 
+                }); 
+            }
+        </script>
+    <!--Load Map Script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNxCY6RuXzmiiDdWk5apHZwVTP6hVa1s8&callback=initMap&libraries=&v=weekly"></script>
 </body>
 </html>

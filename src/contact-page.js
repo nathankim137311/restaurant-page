@@ -48,18 +48,17 @@ function contactPage() {
     listContainer.append(contactUl, socialDiv);
     socialDiv.append(instagramLogo, twitterLogo, facebookLogo, githubLogo);
     // google maps 
-    const googleImg = new Image(); 
-    googleImg.src = Google; 
-    googleImg.setAttribute('id', 'google-img'); 
-    contactContainer.appendChild(googleImg); 
-    // background image 
+    const googleMaps = document.createElement('div'); 
+    googleMaps.setAttribute('id', 'map');   
+    contactContainer.appendChild(googleMaps); 
+    // background image
     const backgroundImg = new Image();
     backgroundImg.src = Street; 
     backgroundImg.setAttribute('id', 'contact-background-img'); 
     contactContainer.appendChild(listContainer);
     // appending elements to the DOM 
     content.appendChild(main);
-    main.append(backgroundImg, contactContainer); 
+    main.append(backgroundImg, contactContainer)
 }
 
 export default contactPage

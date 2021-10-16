@@ -54,6 +54,7 @@ function header() {
             contact.style.borderBottom = '4px solid #2ECBE9';
             removeContent();
             contactPage(); 
+            initMap(); 
             footer(); 
         }
     }));
@@ -105,5 +106,20 @@ function removeContent() {
     main.remove();
     footer.remove(); 
 }
+
+function  initMap() {   
+    // location of dmz
+    const dmz = { lat: 37.916461145505295, lng: 126.69780649205406 };
+    // the map, centered at dmz
+    const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 6, 
+        center: dmz,
+    });
+    // the marker, positioned at dmz
+    const marker = new google.maps.Marker({
+        position: dmz,
+        map: map, 
+    }); 
+    }
 
 export default header

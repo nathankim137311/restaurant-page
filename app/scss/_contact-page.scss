@@ -10,14 +10,8 @@
 
 #contact-background-img {
     opacity: 0.4;
-    height: 915px;
+    height: 850px;
     width: 100%;
-}
-
-#google-img {
-    height: 350px;
-    width: 450px;
-    border-radius: 5px;
 }
 
 .contact-container {
@@ -67,14 +61,17 @@
     width: fit-content;
 }
 
-#google-img {
+#map {
     margin-right: 10px;
     border: 2px #DDA471 solid;
+    border-radius: 5px;
+    height: 350px;
+    width: 450px;
 }
 
 #contact-social {
     position: absolute;
-    bottom: 15px;
+    bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
