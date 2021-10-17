@@ -19,7 +19,7 @@
     background-color: white;
     color: $lightblue;
     border-radius: 5px;
-    border: 3px #DDA471 solid;
+    border: 3px $lightbrown solid;
     font-size: 1.9rem;
  }
 }
@@ -40,12 +40,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('/src/jpg/korean-frame.jpg');
+    background-image: url(/src/jpg/korean-frame.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    border: 3px #DDA471 solid;
+    border: 3px $lightbrown solid;
     width: 55%;
     height: 1500px;
     p {
@@ -63,7 +63,7 @@
     height: 380px; 
     margin: 25px 0px 25px 0px; 
     border-radius: 10px;
-    border: 2px #DDA471 solid;
+    border: 2px $lightbrown solid;
     box-shadow: 0px 8px 20px 1px rgba(0,0,0,0.25);
     background-color: white;
     ul {
@@ -85,5 +85,5 @@
     height: 100%;
     width: 450px;
     border-radius: 5px;
-    border: 2px #DDA471 solid;
+    border: 2px $lightbrown solid;
 }

@@ -26,8 +26,8 @@
     height: 500px;
     width: 700px;
     width: 45%;
-    border: 3px solid #DDA471;
-    background-image: url('/src/jpg/korean-frame.jpg');
+    border: 3px solid $lightbrown;
+    background-image: url(/src/jpg/korean-frame.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -71,7 +71,7 @@
 
 #map {
     margin-right: 10px;
-    border: 2px #DDA471 solid;
+    border: 2px $lightbrown solid;
     border-radius: 5px;
     height: 350px;
     width: 450px;
