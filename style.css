@@ -252,7 +252,6 @@ p {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #202020;
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
