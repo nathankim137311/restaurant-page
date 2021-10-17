@@ -1,12 +1,11 @@
-import Street from '/src/jpg/street.jpg'
-import Google from '/src/jpg/google-maps.jpg'
-import Instagram from '/src/svg/instagram.svg'
-import Twitter from '/src/svg/twitter.svg'
-import Facebook from '/src/svg/facebook.svg'
-import Github from '/src/svg/github.svg'
-import Phone from '/src/png/phone.png'
-import Mail from '/src/png/email.png'
-import Place from '/src/png/place.png' 
+import Street from './jpg/street.jpg'
+import Instagram from './svg/instagram.svg'
+import Twitter from './svg/twitter.svg'
+import Facebook from './svg/facebook.svg'
+import Github from './svg/github.svg'
+import Phone from './png/phone.png'
+import Mail from './png/email.png'
+import Place from './png/place.png' 
 // contact content 
 function contactPage() {
     const content = document.getElementById('content');
