@@ -1,6 +1,6 @@
-import Food from './jpg/street-food.jpg';
-import Squid from './png/red-octopus.png'; 
-import Street from './jpg/street.jpg';
+import Food from './src/jpg/street-food.jpg';
+import Squid from './src/png/red-octopus.png'; 
+import Street from './src/jpg/street.jpg';
 // main content
 function homePage() {
     const content = document.getElementById('content');

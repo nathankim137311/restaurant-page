@@ -1,7 +1,7 @@
-import Bbq from './jpg/bbq.jpg'
-import Soju from './jpg/soju.jpg'
-import Jeon from './jpg/jeon.jpg'
-import Street from './jpg/street.jpg'
+import Bbq from './src/jpg/bbq.jpg'
+import Soju from './src/jpg/soju.jpg'
+import Jeon from './src/jpg/jeon.jpg'
+import Street from './src/jpg/street.jpg'
 // menu 
 function menuPage() {
     const content = document.getElementById('content');
