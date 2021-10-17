@@ -81,5 +81,4 @@ function footer() {
     footer.append(footerDiv, copyDiv);
     footerDiv.append(exploreUl, visitUl, followUl, contactUl);
 }
-
 export default footer

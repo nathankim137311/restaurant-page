@@ -4,6 +4,9 @@ import Instagram from '/src/svg/instagram.svg'
 import Twitter from '/src/svg/twitter.svg'
 import Facebook from '/src/svg/facebook.svg'
 import Github from '/src/svg/github.svg'
+import Phone from '/src/png/phone.png'
+import Mail from '/src/png/email.png'
+import Place from '/src/png/place.png' 
 // contact content 
 function contactPage() {
     const content = document.getElementById('content');
@@ -16,17 +19,29 @@ function contactPage() {
     const contactUl = document.createElement('ul');
     const contactH2 = document.createElement('h2'); 
     contactH2.textContent = 'Contact Us'; 
-    const contactP = document.createElement('p'); 
-    contactP.textContent = 'contact information below';
-    const contactArr = ['+435-207-8679', 'korean-street@email.com', '12234 fake st SE'];
+    const contactArr = ['+ (1) 435-207-8679', 'korean-street@email.com', '12234 fake st SE'];
     const socialDiv = document.createElement('div');
     socialDiv.setAttribute('id', 'contact-social'); 
-    contactUl.append(contactH2, contactP); 
+    contactUl.appendChild(contactH2); 
+    // links 
+    // phone icon
+    const link1 = document.getElementById('link-0');
+    const phone = new Image();
+    phone.src = Phone;  
+    // mail icon
+    const link2 = document.getElementById('link-1');
+    const mail = new Image();
+    mail.src = Mail; 
+    // location icon 
+    const link3 = document.getElementById('link-2');
+    const place = new Image();
+    place.src = Place; 
+    const iconsArr = [phone, mail, place];
     for(let i = 0; i < contactArr.length; i++) {
         const li = document.createElement('li'); 
         const a = document.createElement('a');
         a.textContent = contactArr[i];
-        li.appendChild(a); 
+        li.append(iconsArr[i], a); 
         contactUl.appendChild(li); 
     }
     // instagram logo  
@@ -60,5 +75,4 @@ function contactPage() {
     content.appendChild(main);
     main.append(backgroundImg, contactContainer)
 }
-
 export default contactPage

@@ -52,5 +52,4 @@ function homePage() {
     mainContainer.append(infoCard, foodPicture); 
     infoCard.append(about, hours);
 }
-
 export default homePage 

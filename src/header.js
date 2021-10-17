@@ -39,19 +39,19 @@ function header() {
     navLinks.forEach(link => link.addEventListener('click', (e) => {
         if (e.target.id === 'home-link') { // deletes child nodes of tag main and adds new content 
             const home = document.getElementById('home-link');
-            home.style.borderBottom = '4px solid #2ECBE9';
+            console.log(home); 
             removeContent();
             homePage();
             footer(); 
         } else if (e.target.id === 'menu-link') { 
             const menu = document.getElementById('menu-link');
-            menu.style.borderBottom = '4px solid #2ECBE9';
+            console.log(menu); 
             removeContent();
             menuPage();
             footer(); 
         } else if (e.target.id === 'contact-link') {
             const contact = document.getElementById('contact-link');
-            contact.style.borderBottom = '4px solid #2ECBE9';
+            console.log(contact); 
             removeContent();
             contactPage(); 
             initMap(); 
@@ -106,7 +106,7 @@ function removeContent() {
     main.remove();
     footer.remove(); 
 }
-function  initMap() {   
+function initMap() {   
     // location of dmz
     const dmz = { lat: 37.916461145505295, lng: 126.69780649205406 };
     // the map, centered at dmz
@@ -119,6 +119,5 @@ function  initMap() {
         position: dmz,
         map: map, 
     }); 
-    }
-
+}
 export default header
