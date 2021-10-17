@@ -40,6 +40,7 @@ function contactPage() {
     for(let i = 0; i < contactArr.length; i++) {
         const li = document.createElement('li'); 
         const a = document.createElement('a');
+        a.setAttribute('href', '#'); 
         a.textContent = contactArr[i];
         li.append(iconsArr[i], a); 
         contactUl.appendChild(li); 
