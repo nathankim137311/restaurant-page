@@ -1,4 +1,4 @@
-# [Restaurant Page](https://nathankim137311.github.io/restaurant-page/)
+# [Restaurant Site](https://nathankim137311.github.io/restaurant-page/)
 
 ## Description
 A simple restaurant site with multiple pages of navigation utilizing Google Maps API. 
